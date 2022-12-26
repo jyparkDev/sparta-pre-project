@@ -49,10 +49,11 @@
 
     .mybtn {
       width: 100%;
+      margin-bottom: 15px;
     }
 
     .order > table {
-      margin: 40px 0;
+      margin: 20px 0;
       font-size: 18px;
     }
 
@@ -68,21 +69,22 @@
     function show_order() {
       $.ajax({
         type: 'GET',
-        url: '/mars',
+        url: '/mars/mars',
         data: {},
         success: function (response) {
           let rows = response['orders']
-          for(let i = 0 ; i < rows.length ; i++){
-            let name = rows[i]['name']
-            let address = rows[i]['address']
-            let size = rows[i]['size']
 
-            let temp_html = `<tr>
+          for(let i = 0; i < rows.length; i++){
+            let name = rows[i]['name'];
+            let addr = rows[i]['address'];
+            let size = rows[i]['size'];
+
+            let temp_html =  `<tr>
                                 <td>${name}</td>
-                                <td>${address}</td>
+                                <td>${addr}</td>
                                 <td>${size}</td>
                             </tr>`
-            $('#order-box').append(temp_html)
+            $('#order-box').append(temp_html);
           }
         }
       });
@@ -95,13 +97,17 @@
 
       $.ajax({
         type: 'POST',
-        url: '/mars',
-        data: {name_give: name,address_give :address,size_give:size},
+        url: '/mars/save',
+        data: {name: name,address :address,size:size},
         success: function (response) {
           alert(response['msg'])
           window.location.reload()
         }
       });
+    }
+
+    function home(){
+      location.href = "/";
     }
   </script>
 </head>
@@ -135,6 +141,7 @@
       </select>
     </div>
     <button onclick="save_order()" type="button" class="btn btn-warning mybtn">주문하기</button>
+    <button onclick="home();" type="button" class="btn btn-secondary mybtn">메인으로</button>
   </div>
   <table class="table">
     <thead>
