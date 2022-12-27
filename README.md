@@ -11,7 +11,8 @@
 ![image](https://user-images.githubusercontent.com/72076023/209486430-c88da9e5-f6c4-45b5-818c-3cd81be64704.png)
 ## 화성땅 공동구매
 ![image](https://user-images.githubusercontent.com/72076023/209486477-56ceb4f5-a410-4871-bd2a-374fc73d8901.png)
-## 팬명록(구현중)
+## 팬명록
+![image](https://user-images.githubusercontent.com/72076023/209684686-7f0a8fad-324a-4a40-97ed-56944cf4e78d.png)
 
 ## 스파르피디아(구현중)
 
