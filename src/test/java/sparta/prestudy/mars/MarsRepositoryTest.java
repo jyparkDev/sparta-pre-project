@@ -31,10 +31,6 @@ class MarsRepositoryTest {
     @Test
     void 등록하기() {
         Mars mars = new Mars(1L,"jypark","경기도 평택시","10평");
-        mars.setId(1L);
-        mars.setName("jypark");
-        mars.setAddress("경기도 평택시");
-        mars.setSize("10평");
 
         Long findmars = marsRepository.save(mars);
 
