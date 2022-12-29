@@ -1,7 +1,6 @@
 package sparta.prestudy.mars;
 
 import lombok.RequiredArgsConstructor;
-import lombok.Setter;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

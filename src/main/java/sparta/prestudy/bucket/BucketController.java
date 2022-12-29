@@ -1,14 +1,11 @@
 package sparta.prestudy.bucket;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -50,5 +47,6 @@ public class BucketController {
         bucketService.done(doneId);
         result.put("msg","완료!!");
         return result;
+
     }
 }
