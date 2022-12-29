@@ -16,5 +16,6 @@
 
 ## 스파르피디아(구현중)
 
-## 버킷리스트(구현중)
+## 버킷리스트
+![image](https://user-images.githubusercontent.com/72076023/209933808-2696a604-11c3-44e1-8555-687cdabbab39.png)
 
